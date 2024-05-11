@@ -178,3 +178,61 @@ console.log (`I am inviting ${speacal_guests.length}, people to dinner.`);
 
 let countries: string[] = ["Japan","Canada","China","England","Iceland",];
 console.log("Countries I'd to visit:",countries);
+
+//Q 21:
+
+let book:{titel:string;Auther:string;yearPublisher:number} = {
+    titel: "The Neem Tree",
+    Auther: "Alber Einistine",
+    yearPublisher: 1985 
+}
+console.log (`Book info ${book.titel},by ${book.Auther}, published in ${book.yearPublisher}.`);
+
+//Q 22:
+
+
+let friends: string[]= ["Fariz", "Fazir",  "Kashif"];
+
+console.log(friends[3]); // International Error Arrays are zero-indexed, so index 3 is out of bounds.
+friends[2] = "Kashif"; // Correcting the error by accessing a valid index.
+
+
+//Q 23;
+
+let car = "subaru";
+
+
+console.log("Is car == 'sabaru'? I predict True.");
+console.log(car == 'subaru'); // true
+
+console.log("Is car == 'toyota'? I predict False.");
+console.log(car == "toyota"); // False
+
+//Q 24:
+ 
+// Equality with string
+console.log("Testing equality with string:");
+console.log("apple" == "apple"); // True
+
+
+
+// Using the lowercase function
+console.log("Testing with lower case:");
+console.log("Apple".toLowerCase() == "apple"); // True
+
+
+// Numerical tests
+console.log("Numerical test");
+console.log(10 > 5); //true
+console.log(2 < 1); // False
+
+// Tests using "and" and 'or' operators
+console.log("Test with 'and' and 'or'");
+console.log(true && false); // False
+console.log(true );
+console.log(false);
+
+// Test weather an item is in a array
+let fruits = ["apple","banana","cherry"];
+console.log("Is 'appie' in fruits?");
+console.log(!fruits.includes("mango")); // True
