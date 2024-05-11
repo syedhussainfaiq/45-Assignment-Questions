@@ -43,3 +43,45 @@ for (var _i = 0, personName_1 = personName; _i < personName_1.length; _i++) {
     var name_1 = personName_1[_i];
     console.log("Hello ".concat(personName, ", would you like to learn some Typscript today?"));
 }
+// Q 13:
+var transports = ["Honda motercycle", "Tesla car", "Bianchi bicycle"];
+transports.forEach(function (transport) {
+    console.log("I would like to owan a ".concat(transport, "."));
+});
+//Q 14:
+var guests = ["Albert Einstien", "Marie Curie", "Nikola Tesla"];
+guests.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+});
+//Q 15:
+var unableToAttend = "Nikola Tesla";
+console.log("".concat(unableToAttend, ", can t make it to dinner."));
+//Replace the guest
+var newGuest = "Landro da vanica";
+guests[guests.indexOf(unableToAttend)] = newGuest;
+// New invitation
+guests.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+});
+//Q 16:
+var Guests = ["Albert Einstine", "Marie Corie", "Landro Vinci"];
+console.log("Great news! I found a bigger dinner table!");
+// Adding more guests
+Guests.unshift("Isaac Newton");
+Guests.splice(Guests.length / 2, 0, "Charles Darwin");
+Guests.push("Ada Lovelace");
+Guests.forEach(function (Guest) {
+    console.log("Dear ".concat(Guest, ", would you like to join me for dinner?"));
+});
+//Q 17:
+console.log("Unfortunately, I can only invite tow people for dinner.");
+while (guests.length > 2) {
+    var removedGuest = Guests.pop();
+    console.log("Sorry, ".concat(removedGuest, ", I can't invited you to dinner."));
+}
+guests.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ",your still invited to dinner"));
+});
+guests.splice(0, guests.length);
+console.log(guests); //Show an empty list
+//Q 18:
