@@ -236,3 +236,124 @@ console.log(false);
 let fruits = ["apple","banana","cherry"];
 console.log("Is 'appie' in fruits?");
 console.log(!fruits.includes("mango")); // True
+
+
+// Q 25:
+
+// Version that passes:
+
+let alien_color = "green";
+if (alien_color == "green") {
+    console.log("You just earned 5 points!");
+}
+
+
+// Version that fails(no output)
+if (alien_color == "green"){
+    // no output beacuse the condition is false
+}
+
+
+
+//Q 26:
+
+// Version that runs the if block:
+
+alien_color = "green";
+if (alien_color == "green") {
+    console.log("You just earned 5 points for shooting the alien!");
+} else {
+    console.log('You just earned 10 points.')
+}
+
+
+// Version that runs the else block:
+
+
+alien_color ="yellow";
+if (alien_color == "green") {
+    console.log("you just earned 5 points for shooting the alien!");
+} else {
+    console.log("You just earned 10 points.");
+}
+
+
+// Q 27:
+
+// Red alien version
+alien_color = "red";
+if (alien_color == "green") {
+    console.log("You just earned 5 points.");
+} else if (alien_color == "yellow") {
+    console.log("You just earned 10 points.");
+} else if (alien_color == "red") {
+    console.log("You just earned 15 points.")
+}
+
+// Green alien version
+
+
+alien_color ="green";
+if(alien_color == "green") {
+    console.log("You just earned 5 points.");
+} else if (alien_color == "red") {
+    console.log("You just earned 10 points.");
+} else if (alien_color == "yellow") {
+    console.log("You just earned 15 points.");
+}
+
+
+// Yellow alien version
+
+alien_color ="yellow";
+if (alien_color == "green") {
+    console.log("Yoy just earned 5 points.");
+} else if (alien_color == "yellow") {
+    console.log("You just earned 10 points.");
+} else if (alien_color == "red") {
+    console.log("You just earned 15 points.");
+}
+
+// Q 28:
+
+
+let age: number = 12; 
+if (age < 2) {
+    console.log("The person is a baby.");
+} else if (age < 4) {
+    console.log ("The person is a toddler.");
+} else if (age < 13) {
+    console.log("The person is a kid. ");
+} else if (age < 20) {
+    console.log("The person is a teenager.");
+} else if (age < 65) {
+    console.log ("The person is a adult.");
+} else {
+    console.log("The person is a elder. ");
+}
+
+//Q! 29:
+
+
+let favorate_fruits: string [] = ["apple", "mango", "oraing"];
+
+if(favorate_fruits.includes("apple")) {
+    console.log ("Yoy realy like apple!");
+} if (favorate_fruits.includes("mango")) {
+    console.log ("You really like a mango");
+} if (favorate_fruits.includes("oraing")) {
+    console.log("You really like a oraing!");
+}
+
+
+//Q 30 :
+ 
+let userNames : string[] = ["admin", "user1" ,"user2", "user3", "user4"];
+ 
+userNames.forEach(username => {
+    if (username === "admin") {
+        console.log("Hello admin, would you like to see status report?");
+    } else {
+        console.log(`Hello ${userNames}, thank you for logging in again.`);
+    }
+})
