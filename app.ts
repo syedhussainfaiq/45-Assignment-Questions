@@ -143,5 +143,38 @@ guests.splice(0, guests.length);
 console.log(guests); //Show an empty list
 
 //Q 18:
+ let places: string [] = ["New Zeland","Iceland","Japan","Swizerland","Norway"];
+
+ console.log("Original order:", places);
+
+ console.log("Alphabetical order:",[...places].sort());
+
+ console.log("Original order:", places);
+
+ console.log("Revers alphabetical order:",[...places].sort());
+
+ console.log("Original order:",places);
+
+ places.reverse();
+ console.log("Reverse order:", places);
+
+ places.reverse();
+ console.log("Original order:", places);
+
+ places.sort();
+ console.log("Alphabetical order:", places);
+
+ places.reverse();
+ console.log("Reverse alphabetical order:", places);
 
 
+//Q 19:
+
+let speacal_guests: string[] = ["Albert Einstein","Marie Corie","Leonardo da Vinci",
+"Isaac Newton","Charles Drawin"];
+console.log (`I am inviting ${speacal_guests.length}, people to dinner.`);
+
+//Q 20:
+
+let countries: string[] = ["Japan","Canada","China","England","Iceland",];
+console.log("Countries I'd to visit:",countries);
