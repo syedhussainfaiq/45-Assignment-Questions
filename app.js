@@ -76,8 +76,8 @@ Guests.forEach(function (Guest) {
 //Q 17:
 console.log("Unfortunately, I can only invite tow people for dinner.");
 while (guests.length > 2) {
-    var removedGuest = Guests.pop();
-    console.log("Sorry, ".concat(removedGuest, ", I can't invited you to dinner."));
+    var removedGuest = guests.pop();
+    console.log("Sorry, ".concat(guests, ", I can't invited you to dinner."));
 }
 guests.forEach(function (guest) {
     console.log("Dear ".concat(guest, ",your still invited to dinner"));

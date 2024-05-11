@@ -131,8 +131,8 @@ Guests.forEach(Guest =>{
 console.log("Unfortunately, I can only invite tow people for dinner.");
 
 while (guests.length > 2  ) {
-    let removedGuest = Guests.pop();
-    console.log (`Sorry, ${removedGuest}, I can't invited you to dinner.`);
+    let removedGuest = guests.pop();
+    console.log (`Sorry, ${guests}, I can't invited you to dinner.`);
 }
 
 guests.forEach(guest =>{
