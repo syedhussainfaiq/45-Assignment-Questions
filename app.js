@@ -290,3 +290,55 @@ numbers.forEach(function (number) {
     }
     console.log("".concat(number).concat(suffix));
 });
+// Q 34:
+var pizzas = ["pepperoni", "margherita", "hawaiian"];
+pizzas.forEach(function (pizza) {
+    console.log("I like ".concat(pizza, " pizza."));
+});
+console.log("I really love pizza!");
+// Q 35:
+var animals = ["dog", "cat", "cow"];
+animals.forEach(function (animal) {
+    console.log("A ".concat(animal, " would make a great pet."));
+});
+console.log("Any of these animals would make a great pet");
+// Q 36:
+function make_shirt(size, message) {
+    console.log("Making a ".concat(size, " t-shirt with the message \"").concat(message, "\" printed on it"));
+}
+make_shirt("medium", "Code is Life");
+// Q 37:
+function made_shirt(size, message) {
+    if (size === void 0) { size = "Laqrge"; }
+    if (message === void 0) { message = "I love Typscript"; }
+    console.log("Making a ".concat(size, " t-shirt with the message \"").concat(message, "\" printed on it."));
+}
+made_shirt();
+made_shirt("medium");
+made_shirt("small", "Dive into Coding");
+// Q 38:
+function describe_city(city, country) {
+    if (country === void 0) { country = "Pakistan"; }
+    console.log("".concat(city, " is in ").concat(country, "."));
+}
+describe_city("karachi");
+describe_city("lahore");
+describe_city("Tokyo", "Japan");
+// Q 39:
+function city_country(city, country) {
+    return "".concat(city, ", ").concat(country, ";");
+}
+console.log(city_country("Lahore", "Pakistan"));
+console.log(city_country("Tokyo", "Japan"));
+console.log(city_country("Paris", "France"));
+//Q 40:
+function make_album(artist, title, tracks) {
+    var album = { artist: artist, title: title };
+    if (tracks) {
+        album['tracks'] = tracks;
+    }
+    return album;
+}
+console.log(make_album("Artist One", "The First Album"));
+console.log(make_album("Artist Two", "The Second Album"));
+console.log(make_album("Artist Three", "The Third Album", 12));
