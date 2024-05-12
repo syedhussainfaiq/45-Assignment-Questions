@@ -54,7 +54,7 @@ console.log( 16 / 2);
 
 let favorate_number : number = 10;
 
-console.log(`My favorate number ${famous_person}.`);
+console.log(`My favorate number ${favorate_number}.`);
 
 // Q 10:
 
@@ -66,9 +66,9 @@ console.log(`Hell ${myName}, would you like to learn some Typscript to day?`);
 
 // Q 11:
 
-let pesonName : string[] = ["Fariz", "Faiq","Fazir","Fariha"];
-for(let i = 0; i < pesonName.length; i++){
-    console.log(pesonName[i]);
+let person : string[] = ["Fariz", "Faiq","Fazir","Fariha"];
+for(let i = 0; i < person.length; i++){
+    console.log(person[i]);
 }
 
 
@@ -356,4 +356,48 @@ userNames.forEach(username => {
     } else {
         console.log(`Hello ${userNames}, thank you for logging in again.`);
     }
-})
+});
+
+// Q 31:
+
+let username : string[] = [];
+
+if(username.length === 0) {
+    console.log("We need to find some users!");
+} else {
+    // Great user
+
+}
+// Removing all user names ensure the message "We to  ned find some useres!",is printed.
+
+
+// Q 32:
+
+
+let current_users : string[] = ["user1", "admin", "user3", "user4", "user5" ];
+let new_users : string[] = ["User1" , "User6", "admin", "user8", "User9"];
+
+new_users.forEach(new_users => {
+    if(current_users.some(current_users => current_users.toLowerCase()===
+new_users.toLowerCase())) {
+    console.log(`${new_users}, will need to enter a new username.`);
+} else{
+    console.log(`${new_users}, is available. `)
+}
+});
+
+// Q 33:
+
+let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numbers.forEach(number => {
+    let suffix ="th";
+    if (number === 1) {
+        suffix = "st";
+    } else if (number === 2) {
+        suffix = "nd";
+    } else if (number === 3) {
+        suffix = "rd";
+    }
+    console.log(`${number}${suffix}`);
+});

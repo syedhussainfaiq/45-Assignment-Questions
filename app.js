@@ -35,16 +35,16 @@ console.log(16 / 2);
 //(Refer to the answer for Quwstion 7,as it same purpose.)
 // Question 9 :
 var favorate_number = 10;
-console.log("My favorate number ".concat(famous_person, "."));
+console.log("My favorate number ".concat(favorate_number, "."));
 // Q 10:
 // Faiq , 2024-05-07
 // This is program a personal message.
 var my_name = "Faiq Hussain";
 console.log("Hell ".concat(myName, ", would you like to learn some Typscript to day?"));
 // Q 11:
-var pesonName = ["Fariz", "Faiq", "Fazir", "Fariha"];
-for (var i = 0; i < pesonName.length; i++) {
-    console.log(pesonName[i]);
+var person = ["Fariz", "Faiq", "Fazir", "Fariha"];
+for (var i = 0; i < person.length; i++) {
+    console.log(person[i]);
 }
 // Q 12:
 var personName = ["Fazir", "Faiq", "Fariha", "Fariz"];
@@ -253,4 +253,40 @@ userNames.forEach(function (username) {
     else {
         console.log("Hello ".concat(userNames, ", thank you for logging in again."));
     }
+});
+// Q 31:
+var username = [];
+if (username.length === 0) {
+    console.log("We need to find some users!");
+}
+else {
+    // Great user
+}
+// Removing all user names ensure the message "We to  ned find some useres!",is printed.
+// Q 32:
+var current_users = ["user1", "admin", "user3", "user4", "user5"];
+var new_users = ["User1", "User6", "admin", "user8", "User9"];
+new_users.forEach(function (new_users) {
+    if (current_users.some(function (current_users) { return current_users.toLowerCase() ===
+        new_users.toLowerCase(); })) {
+        console.log("".concat(new_users, ", will need to enter a new username."));
+    }
+    else {
+        console.log("".concat(new_users, ", is available. "));
+    }
+});
+// Q 33:
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+numbers.forEach(function (number) {
+    var suffix = "th";
+    if (number === 1) {
+        suffix = "st";
+    }
+    else if (number === 2) {
+        suffix = "nd";
+    }
+    else if (number === 3) {
+        suffix = "rd";
+    }
+    console.log("".concat(number).concat(suffix));
 });
