@@ -342,3 +342,55 @@ function make_album(artist, title, tracks) {
 console.log(make_album("Artist One", "The First Album"));
 console.log(make_album("Artist Two", "The Second Album"));
 console.log(make_album("Artist Three", "The Third Album", 12));
+//Q 41:
+//let magicians : string[] = ["Alice", "David", "Charis"];
+//function show_magicians(magicians: string[]) {
+//  magicians.forEach(magicians => {
+//     console.log(magicians);
+//});
+//}
+//show_magicians(magicians);
+//Q 42:
+//function make_great(maginians: string[]) {
+//  for (let i = 0; i < magicians.length; i++) {
+//    magicians[i] = magicians[i] + "the Great";
+//}
+//}
+//make_great(magicians); // Modifies the orignal arry
+//show_magicians(magicians); // shows modified names
+//Q 43:
+function make_sandwich() {
+    var item = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        item[_i] = arguments[_i];
+    }
+    console.log("Making a sandwich with: ".concat(item.join(','), ","));
+}
+make_sandwich("ham", "cheese");
+make_sandwich("turkey", "lettuce", "tomato");
+make_sandwich("avocado", "sprouts", "mustard", "mayo");
+//Q 44:
+function make_car(manufacturer, model) {
+    var options = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        options[_i - 2] = arguments[_i];
+    }
+    var car = { manufacturer: manufacturer, model: model };
+    options.forEach(function (_a) {
+        var key = _a[0], value = _a[1];
+        return car[key] = value;
+    });
+    return car;
+}
+console.log(make_car("Toyota", "Corolla", ["color", "red"], ["year", 2022]));
+console.log(make_car("Ford", "Fiesta", ["color", "blue"], ["sunroof", "true"]));
+// Q 45:
+var laptop = {
+    make: "Dell",
+    model: "XPS 15",
+    year: 2021,
+    describe: function () {
+        console.log("This is laptop is a ".concat(this.year, " ").concat(this.make, " ").concat(this.model, " ."));
+    }
+};
+laptop.describe();

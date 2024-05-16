@@ -477,3 +477,70 @@ function make_album(artist: string, title: string, tracks?: number) {
 console.log(make_album("Artist One", "The First Album"));
 console.log(make_album("Artist Two", "The Second Album"));
 console.log(make_album("Artist Three", "The Third Album",12));
+
+
+//Q 41:
+
+
+//let magicians : string[] = ["Alice", "David", "Charis"];
+
+//function show_magicians(magicians: string[]) {
+  //  magicians.forEach(magicians => {
+   //     console.log(magicians);
+    //});
+//}
+
+//show_magicians(magicians);
+
+
+//Q 42:
+
+
+//function make_great(maginians: string[]) {
+  //  for (let i = 0; i < magicians.length; i++) {
+    //    magicians[i] = magicians[i] + "the Great";
+    //}
+//}
+
+//make_great(magicians); // Modifies the orignal arry
+//show_magicians(magicians); // shows modified names
+
+
+//Q 43:
+
+
+function make_sandwich(...item: string[]) {
+    console.log (`Making a sandwich with: ${item.join(',')},`);
+}
+ 
+make_sandwich("ham", "cheese");
+make_sandwich("turkey", "lettuce", "tomato");
+make_sandwich("avocado", "sprouts", "mustard", "mayo");
+
+
+//Q 44:
+
+
+function make_car(manufacturer: string, model: string, ...options: [string, any][]):
+Object {
+    let car = { manufacturer, model };
+    options.forEach(([key, value]) => car[key] = value);
+    return car
+}
+
+ console.log(make_car("Toyota","Corolla",["color", "red"],["year",2022]));
+ console.log(make_car("Ford","Fiesta",["color","blue"],["sunroof","true"]))
+
+// Q 45:
+let laptop = {
+    make: "Dell",
+    model: "XPS 15",
+    year: 2021,
+    describe: function(){
+        console.log(`This is laptop is a ${this.year} ${this.make} ${this.model} .`);
+    }
+};
+ laptop.describe();
+
+
+
